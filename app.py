@@ -7,16 +7,33 @@ import random
 st.set_page_config(page_title="Para a Minha Chubiruba", page_icon="❤️")
 
 # Estilização para deixar com cara de app
+# Substitua o bloco st.markdown(""" <style> ... </style> """, unsafe_allow_html=True) por este:
+
 st.markdown("""
     <style>
-    .stApp { background-color: #fff5f5; }
+    /* Força o fundo da página */
+    .stApp {
+        background-color: #fff5f5 !important;
+    }
+    
+    /* Força a cor de todos os textos, títulos e marcações para preto */
+    h1, h2, h3, p, span, div, .stMarkdown {
+        color: #000000 !important;
+    }
+
+    /* Estilização do botão para ele não sumir */
     .stButton>button {
         width: 100%;
         border-radius: 20px;
-        background-color: #ff4b4b;
-        color: white;
+        background-color: #ff4b4b !important;
+        color: white !important;
         border: none;
         font-weight: bold;
+    }
+    
+    /* Força a cor do texto dentro da área de mensagem final */
+    textarea {
+        color: #000000 !important;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -87,4 +104,5 @@ st.markdown(f"""
 
 feedback = st.text_area("Deixe uma mensagem para mim aqui se quiser:", "Te amo muito!")
 if st.button("Enviar Mensagem"):
+
     st.write("Mensagem 'salva' no meu coração!")
