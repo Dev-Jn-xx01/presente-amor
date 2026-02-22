@@ -85,7 +85,7 @@ col5, col6 = st.columns(2)
 with col5:
     st.image("beijo.png", caption="OLHA COMO ELA É LINDA!", use_container_width=True)
 with col6:
-    st.image("beijo.png", caption="Um beijo especial", use_container_width=True)
+    st.image("linda.png", caption="Um beijo especial", use_container_width=True)
 
 # --- SEÇÃO 4: Mensagem Final ---
 st.divider()
@@ -106,3 +106,4 @@ feedback = st.text_area("Deixe uma mensagem para mim aqui se quiser:", "Te amo m
 if st.button("Enviar Mensagem"):
 
     st.write("Mensagem 'salva' no meu coração!")
+
