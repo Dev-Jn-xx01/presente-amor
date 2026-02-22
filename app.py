@@ -38,7 +38,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("❤️ Nossa História em Código")
+st.title("❤️ Para o amor da minha vida , meu chucrute")
 st.write("Demorei pra fazer isso aqui mais do que tu imagina, então espero que gosteee!")
 
 # --- SEÇÃO 1: O Contador ---
@@ -107,5 +107,6 @@ feedback = st.text_area("Deixe uma mensagem para mim aqui se quiser:", "Te amo m
 if st.button("Enviar Mensagem"):
 
     st.write("Mensagem 'salva' no meu coração!")
+
 
 
