@@ -83,9 +83,9 @@ with col4:
 
 col5, col6 = st.columns(2)
 with col5:
-    st.image("beijo.png", caption="OLHA COMO ELA É LINDA!", use_container_width=True)
+    st.image("beijo.png", caption="Beijo no coração", use_container_width=True)
 with col6:
-    st.image("linda.png", caption="Um beijo especial", use_container_width=True)
+    st.image("linda.png", caption="SUA APETITOSA", use_container_width=True)
 
 # --- SEÇÃO 4: Mensagem Final ---
 st.divider()
@@ -100,10 +100,12 @@ st.markdown(f"""
 > Talvez por isso você sonhe em ser policial. Você nasceu pra ser coragem, pra ser força. Você é flor e é armadura. E se um dia você vestir essa farda, eu estarei ali, orgulhoso, sabendo que o mundo ganhou uma heroína.
 >
 > Amar você é a melhor parte da minha história.
+ps: eu te amo muito , vc é o melhor presente q eu posso ter minha chubiruba , espero q goste , foi mais dificil q imaginei
 """)
 
 feedback = st.text_area("Deixe uma mensagem para mim aqui se quiser:", "Te amo muito!")
 if st.button("Enviar Mensagem"):
 
     st.write("Mensagem 'salva' no meu coração!")
+
 
